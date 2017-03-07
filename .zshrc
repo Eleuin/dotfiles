@@ -17,5 +17,5 @@ antigen theme bira
 
 antigen apply
 
-export SUDO_EDITOR=vim
+export SUDO_EDITOR=rvim
 alias se='sudoedit'
