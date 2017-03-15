@@ -19,3 +19,4 @@ antigen apply
 
 export SUDO_EDITOR=rvim
 alias se='sudoedit'
+eval $(thefuck --alias shit)
