@@ -1,3 +1,6 @@
+export SUDO_EDITOR=rvim
+
+source ~/.zshalias
 source /usr/share/zsh/share/antigen.zsh 
 
 antigen use oh-my-zsh
@@ -18,5 +21,4 @@ antigen theme bira
 antigen apply
 
 export SUDO_EDITOR=rvim
-alias se='sudoedit'
-eval $(thefuck --alias shit)
+
