@@ -19,6 +19,3 @@ EOBUNDLES
 antigen theme bira
 
 antigen apply
-
-export SUDO_EDITOR=rvim
-
