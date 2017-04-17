@@ -1,8 +1,8 @@
 Xcursor.theme: Vanilla-DMZ
 
 rofi.color-enabled:                  true
-rofi.color-normal:                   #c0ffffff,#525d76,#f5f5f5,#9452E2,#ffffff
-rofi.color-urgent:                   #c0ffffff,#dc322f,#f5f5f5,#9452E2,#dc322f
-rofi.color-active:                   #c0ffffff,#c2cad0,#f5f5f5,#9452E2,#c2cad0
-rofi.color-window:                   #cffffff,#f5f5f5
+rofi.color-normal:                   argb:e6eeeeee,argb:e6525d76,argb:e6f5f5f5,argb:e69452E2,argb:e6ffffff
+rofi.color-urgent:                   argb:e6eeeeee,argb:e6dc322f,argb:e6f5f5f5,argb:e69452E2,argb:e6dc322f
+rofi.color-active:                   argb:e6eeeeee,argb:e6c2cad0,argb:e6f5f5f5,argb:e69452E2,argb:e6c2cad0
+rofi.color-window:                   argb:e6ffffff,argb:e6f5f5f5
 rofi.separator-style:                solid
