@@ -183,7 +183,7 @@ bar {
 }
 
 # Allow screen locking
-bindsym $mod+p exec --no-startup-id i3lock -i ~/Pictures/wallpaperblur.png
+bindsym $mod+p exec --no-startup-id i3lock-fancy
 
 # Add a wallpaper
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
