@@ -137,7 +137,7 @@ bindsym XF86AudioLowerVolume exec ponymix decrease 5
 bindsym XF86AudioMute exec ponymix toggle
 
 # Screenshots
-bindsym $mod+x exec scrot ~/Pictures/screenshots/%Y-%m-%d-%T.png
+bindsym $mod+x exec maim ~/Pictures/screenshots/$(date +%Y-%m-%d-%T).png
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
