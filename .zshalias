@@ -1,5 +1,6 @@
 alias se='sudoedit'
 alias gc='git commit -Sv'
 alias gpom='git push origin master'
+alias p='pacaur'
 
 eval $(thefuck --alias shit)
