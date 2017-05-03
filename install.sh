@@ -2,7 +2,7 @@
 
 #fixme for multiple platforms
 echo "installing software"
-pacaur -S xorg-xinit i3-gaps i3blocks  rofi-dmenu ponymix maim cmus
+pacaur -S xorg-xinit i3-gaps i3blocks i3lock-fancy-git rofi-dmenu ponymix maim cmus
 
 
 echo "installing xinitrc"
