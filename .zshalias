@@ -1,4 +1,5 @@
 alias se='sudoedit'
+alias rnvim='nvim -Z'
 alias gc='git commit -Sv'
 alias gpom='git push origin master'
 alias p='pacaur'

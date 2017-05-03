@@ -32,4 +32,3 @@ cp .config/cava/config ~/.config/cava
 
 echo "installing wallpaper"
 cp wallpaper.jpg ~/Pictures
-cp wallpaperblur.png ~/Pictures

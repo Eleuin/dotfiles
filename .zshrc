@@ -1,5 +1,3 @@
-export SUDO_EDITOR=nvim -Z
-
 source ~/.zshalias
 
 if [[ ! -d ~/.zplug ]]; then
@@ -8,6 +6,8 @@ if [[ ! -d ~/.zplug ]]; then
 fi
 
 source ~/.zplug/init.zsh
+
+export SUDO_EDITOR=rnvim
 
 zplug "plugins/git",			from:oh-my-zsh
 zplug "plugins/git-extras",		from:oh-my-zsh
