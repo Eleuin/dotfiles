@@ -5,7 +5,7 @@ font = xos4 Terminus 10px
 foreground      = #c5c8c6
 foreground_bold = #e0e0e0
 cursor          = #e0e0e0
-background      = rgba(29, 31, 33, 0.8)
+background      = rgba(29, 31, 33, 0.95)
 
 # 16 color space
 
