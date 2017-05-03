@@ -2,8 +2,11 @@
 
 #fixme for multiple platforms
 echo "installing software"
-pacaur -S xorg-xinit i3-gaps i3blocks i3lock-fancy-git rofi-dmenu ponymix maim cmus
+pacaur -S xorg-xinit i3-gaps i3blocks i3lock-fancy-git rofi-dmenu ponymix maim cmus neovim git
 
+echo "installing plug for neovim"
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 echo "installing xinitrc"
 cp .xinitrc ~/
@@ -15,8 +18,8 @@ echo "installing zsh configs"
 cp .zshrc ~/
 cp .zshalias ~/
 
-echo "installing vim configs"
-cp .vimrc ~/
+echo "installing neovim configs"
+cp .config/nvim/init.vim ~/.config/nvim
 
 echo "installing i3 configs"
 cp .config/i3/config ~/.config/i3
