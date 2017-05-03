@@ -1,21 +1,29 @@
-export SUDO_EDITOR=rvim
+export SUDO_EDITOR=nvim -Z
 
 source ~/.zshalias
-source /usr/share/zsh/share/antigen.zsh 
 
-antigen use oh-my-zsh
+if [[ ! -d ~/.zplug ]]; then
+  git clone https://github.com/zplug/zplug ~/.zplug
+  source ~/.zplug/init.zsh && zplug update
+fi
 
-antigen bundles <<EOBUNDLES
-	git
-	git-extras
-	extract
-	colored-man-pages
-	command-not-found
-	zsh-users/zsh-autosuggestions
-	zsh-users/zsh-completions
-	zsh-users/zsh-syntax-highlighting
-EOBUNDLES
+source ~/.zplug/init.zsh
 
-antigen theme bira
+zplug "plugins/git",			from:oh-my-zsh
+zplug "plugins/git-extras",		from:oh-my-zsh
+zplug "plugins/extract",		from:oh-my-zsh
+zplug "plugins/colored-man-pages",	from:oh-my-zsh
+zplug "plugins/command-not-found",	from:oh-my-zsh
+zplug zsh-users/zsh-autosuggestions
+zplug zsh-users/zsh-completions
+zplug zsh-users/zsh-syntax-highlighting
+zplug "themes/bira", from:oh-my-zsh, as:theme
 
-antigen apply
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load
