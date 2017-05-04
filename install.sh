@@ -2,7 +2,7 @@
 
 #fixme for multiple platforms
 echo "installing software"
-pacaur -S xorg-xinit i3-gaps i3blocks i3lock-fancy-git rofi-dmenu ponymix maim cmus neovim git
+pacaur -S xorg-xinit i3-gaps i3blocks i3lock-fancy-git rofi-dmenu maim cmus neovim git
 
 echo "installing plug for neovim"
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
