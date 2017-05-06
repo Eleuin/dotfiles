@@ -4,6 +4,7 @@ alias vim='nvim'
 alias gdc='git diff --cached'
 alias gc='git commit -Sv'
 alias gpom='git push origin master'
-alias p='pacaur'
+alias pa='pacaur'
+alias pk='pkill'
 
 eval $(thefuck --alias shit)
