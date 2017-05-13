@@ -12,7 +12,12 @@ echo "installing xinitrc"
 cp .xinitrc ~/
 
 echo "installing Xresources"
+if [ ! -d ~/.xres ]; then
+    mkdir ~/.xres
+fi
 cp .Xresources ~/
+cp .xres/rofi ~/.xres
+cp .xres/URxvt ~/.xres
 
 echo "installing zsh configs"
 cp .zshrc ~/
