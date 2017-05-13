@@ -18,7 +18,7 @@ zplug "plugins/command-not-found",         from:oh-my-zsh
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-autosuggestions"
-zplug "themes/bira",                       from:oh-my-zsh, as:theme
+zplug "denysdovhan/spaceship-zsh-theme",   use:spaceship.zsh, from:github, as:theme
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
