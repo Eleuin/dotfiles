@@ -1,8 +1,34 @@
+!! Cursor
 Xcursor.theme: Vanilla-DMZ
 
+!! URxvt
+URxvt.font:                          xft:xos4 Terminus:size=8
+URxvt.scrollBar:                     false
+
+URxvt.foreground:                    #c5c8c6
+URxvt.background:                    #1d1f21
+URxvt.cursorColor:                   #c5c8c6
+URxvt.color0:                        #1d1f21
+URxvt.color8:                        #969896
+URxvt.color1:                        #cc6666
+URxvt.color9:                        #cc6666
+URxvt.color2:                        #b5bd68
+URxvt.color10:                       #b5bd68
+URxvt.color3:                        #f0c674
+URxvt.color11:                       #f0c674
+URxvt.color4:                        #81a2be
+URxvt.color12:                       #81a2be
+URxvt.color5:                        #b294bb
+URxvt.color13:                       #b294bb
+URxvt.color6:                        #8abeb7
+URxvt.color14:                       #8abeb7
+URxvt.color7:                        #c5c8c6
+URxvt.color15:                       #ffffff
+
+!! Rofi
 rofi.color-enabled:                  true
-rofi.color-normal:                   argb:e6eeeeee,argb:e6525d76,argb:e6f5f5f5,argb:e69452E2,argb:e6ffffff
-rofi.color-urgent:                   argb:e6eeeeee,argb:e6dc322f,argb:e6f5f5f5,argb:e69452E2,argb:e6dc322f
-rofi.color-active:                   argb:e6eeeeee,argb:e6c2cad0,argb:e6f5f5f5,argb:e69452E2,argb:e6c2cad0
-rofi.color-window:                   argb:e6ffffff,argb:e6f5f5f5
+rofi.color-normal:                   #eeeeee, #525d76, #f5f5f5, #9452E2, #ffffff
+rofi.color-urgent:                   #eeeeee, #dc322f, #f5f5f5, #9452E2, #dc322f
+rofi.color-active:                   #eeeeee, #c2cad0, #f5f5f5, #9452E2, #c2cad0
+rofi.color-window:                   #ffffff, #f5f5f5
 rofi.separator-style:                solid
