@@ -19,23 +19,37 @@ cp .zshrc ~/
 cp .zshalias ~/
 
 echo "installing neovim configs"
-mkdir ~/.config/nvim
+if [ ! -d ~/.config/nvim ]; then
+    mkdir ~/.config/nvim
+fi
+if [ ! -f ~/.local/share/nvim/site/autoload/plug.vim ]; then
+    curl -fLos ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
 cp .config/nvim/init.vim ~/.config/nvim
 
 echo "installing i3 configs"
-mkdir ~/.config/i3
+if [ ! -d ~/.config/i3 ]; then
+    mkdir ~/.config/i3
+fi
 cp .config/i3/config ~/.config/i3
 
 echo "installing termite configs"
-mkdir ~/.config/termite
+if [ ! -d ~/.config/termite ]; then
+    mkdir ~/.config/termite
+fi
 cp .config/termite/config ~/.config/termite
 
 echo "installing cava configs"
-mkdir ~/.config/cava
+if [ ! -d ~/.config/cava ]; then
+    mkdir ~/.config/cava
+fi
 cp .config/cava/config ~/.config/cava
 
 echo "installing mpv configs"
-mkdir ~/.config/mpv
+if [ ! -d ~/.config/mpv ]; then
+    mkdir ~/.config/mpv
+fi
 cp .config/mpv/mpv.conf ~/.config/mpv
 
 echo "installing wallpaper"
