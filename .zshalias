@@ -1,6 +1,7 @@
 alias se='sudoedit'
 alias rnvim='nvim -Z'
 alias vim='nvim'
+alias rm='srm -C'
 alias gdc='git diff --cached'
 alias gc='git commit -Sv'
 alias gpom='git push origin master'
